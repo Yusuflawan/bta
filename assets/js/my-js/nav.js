@@ -2,7 +2,7 @@ document.getElementById("mobile-view-nav").innerHTML=`
     <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
     <div class="logo-box">
-        <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-2.png" alt="" /></a>
+        <a href="index.html" aria-label="logo image"><img style="width: 3rem; height: 3rem;" src="assets/images/resources/BTA Logocopy.png" alt="" /></a>
     </div>
     <!-- /.logo-box -->
     <div class="mobile-nav__container"></div>
@@ -20,17 +20,17 @@ document.getElementById("mobile-view-nav").innerHTML=`
     </ul><!-- /.mobile-nav__contact -->
     <div class="mobile-nav__top">
         <div class="mobile-nav__social">
-            <a href="index2-one-page.html#" class="fab fa-twitter"></a>
-            <a href="index2-one-page.html#" class="fab fa-facebook-square"></a>
-            <a href="index2-one-page.html#" class="fab fa-pinterest-p"></a>
-            <a href="index2-one-page.html#" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-facebook-square"></a>
+            <a href="" class="fab fa-pinterest-p"></a>
+            <a href="" class="fab fa-instagram"></a>
         </div><!-- /.mobile-nav__social -->
     </div><!-- /.mobile-nav__top -->
 `;
 
 document.getElementById("nav").innerHTML=`
     <div class="main-menu-two-wrapper__main-menu">
-        <a href="index2-one-page.html#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+        <a href="" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
         <ul class="main-menu__list one-page-scroll-menu">
             <li class="current scrollToLink" data-scroll-offset="0">
                 <a href="index.html">Home</a>
@@ -57,10 +57,10 @@ document.getElementById("nav").innerHTML=`
     </div>
                             <!-- <div class="main-menu-two-wrapper__right">
                                 <div class="main-menu-two__top-social">
-                                    <a href="index2-one-page.html#"><i class="fab fa-twitter"></i></a>
-                                    <a href="index2-one-page.html#"><i class="fab fa-facebook"></i></a>
-                                    <a href="index2-one-page.html#"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="index2-one-page.html#"><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div> -->
 `;
