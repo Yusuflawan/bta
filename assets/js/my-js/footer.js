@@ -96,7 +96,7 @@ document.getElementById("contact").innerHTML=`
                 <div class="col-xl-12">
                     <div class="site-footer__bottom-inner">
                         <p class="site-footer__bottom-text">© Copyright 2026 by <a
-                                href="">Binarify Limited</a>
+                                href="">Bible Tour Adventure</a>
                         </p>
                         <div class="site-footer__social">
                             <a href=""><i class="fab fa-twitter"></i></a>

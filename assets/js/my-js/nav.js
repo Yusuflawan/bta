@@ -64,3 +64,42 @@ document.getElementById("nav").innerHTML=`
                                 </div>
                             </div> -->
 `;
+
+// Add active nav detection so the current page's nav item receives the `current` class ✅
+(function() {
+    const path = window.location.pathname.split('/').pop(); // e.g. 'about.html'
+    const menuItems = document.querySelectorAll('.main-menu__list li');
+
+    if (!menuItems.length) return;
+
+    // clear existing current classes
+    menuItems.forEach(li => li.classList.remove('current'));
+
+    // attempt to match by href filename
+    let matched = null;
+    menuItems.forEach(li => {
+        const a = li.querySelector('a');
+        if (!a) return;
+        const href = a.getAttribute('href') || '';
+
+        // skip anchors
+        if (href.startsWith('#')) return;
+
+        const hrefFile = href.split('/').pop();
+
+        // exact match (about.html === about.html)
+        if (hrefFile === path) matched = li;
+
+        // handle home (index or root)
+        if ((path === '' || path === 'index.html') && (hrefFile === 'index.html' || href === '')) matched = li;
+    });
+
+    if (matched) matched.classList.add('current');
+    else {
+        // fallback: if no filename match and we're on index, ensure Home is current
+        if (path === '' || path === 'index.html') {
+            const home = document.querySelector('.main-menu__list li a[href="index.html"]') || document.querySelector('.main-menu__list li a[href=""]');
+            if (home && home.parentElement) home.parentElement.classList.add('current');
+        }
+    }
+})();
