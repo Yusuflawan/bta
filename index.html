@@ -47,6 +47,30 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/pifoxen.css" />
     <link rel="stylesheet" href="assets/css/pifoxen-responsive.css" />
+    <style>
+        /* Responsive tweak for testimonial cards: stack on small screens */
+        .testimonials-stack{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 767px){
+            .testimonials-stack{
+                flex-direction: column !important;
+                align-items: stretch !important;
+            }
+            .testimonials-stack > div{
+                width: 100% !important;
+                margin-right: 0 !important;
+                margin-bottom: 15px !important;
+            }
+            .testimonials-stack .testimonial-two__single{
+                margin: 0 auto;
+                max-width: 500px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -63,7 +87,7 @@
                 <div class="main-menu-two-wrapper clearfix">
                     <div class="container clearfix">
                         <div class="main-menu-two-wrapper-inner clearfix" id="nav">
-                           <!-- contents here comes from JS -->
+                            <!-- contents here comes from JS -->
                         </div>
                     </div>
                 </div>
@@ -101,7 +125,8 @@
                                 <div class="col-xl-12">
                                     <div class="main-slider__content">
                                         <h2>Bible Tour Adventure (BTA)</h2>
-                                        <p style="margin-left: 10%; margin-right: 10%;">The Discipleship Training Arm of Highway of Realignment Apostolic Ministries Int’l,</p>
+                                        <p style="margin-left: 10%; margin-right: 10%;">The Discipleship Training Arm of
+                                            Highway of Realignment Apostolic Ministries Int’l,</p>
                                         <a href="join-program.html" class="thm-btn">Join the Next Batch</a>
                                         <div class="main-slider-two-map">
                                             <img src="assets/images/shapes/main-slider-two-map.png" alt="">
@@ -121,7 +146,8 @@
                                 <div class="col-xl-12">
                                     <div class="main-slider__content">
                                         <h2>A Discipleship Training Platform for Word-Based Christians</h2>
-                                        <p>designed to raise disciplined believers with deep knowledge, love, and accountability in God’s Word</p>
+                                        <p>designed to raise disciplined believers with deep knowledge, love, and
+                                            accountability in God’s Word</p>
                                         <a href="about.html" class="thm-btn">Learn More</a>
                                         <div class="main-slider-two-map">
                                             <img src="assets/images/shapes/main-slider-two-map.png" alt="">
@@ -131,7 +157,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <!-- If we need navigation buttons -->
                 <div class="swiper-pagination" id="main-slider-pagination"></div>
@@ -151,83 +177,286 @@
         <section class="paq-page">
             <div class="container">
                 <div class="section-title text-left">
-                    <h6 class="section-title__title">FAQ</h6>
+                    <h6 class="section-title__title">WHAT IS BIBLE TOUR ADVENTURE?</h6>
+                </div>
+                <p>Bible Tour Adventure (BTA) is a non-denominational Christian discipleship 
+                    platform created to help believers grow in consistency, understanding, and obedience to God’s Word. 
+                    Through a structured and accountable process, participants are guided to read, study, and engage with 
+                    the complete Bible, developing spiritual discipline and a genuine love for Scripture.
+                </p>
+
+                <ul class="list-unstyled tab-content__inner-list">
+                    <li>
+                        <div class="tab-content__icon">
+                            <span class="icon-tick"></span>
+                        </div>
+                        <div class="">
+                            <p class="tab-content__text" style="padding-top: 1rem;">A guided journey through the 66 books of the Bible</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tab-content__icon tab-content__icon-clr-seacondary">
+                            <span class="icon-tick"></span>
+                        </div>
+                        <div class="">
+                            <p class="tab-content__text" style="padding-top: 1rem;">Partnership with the Holy Spirit in learning and application</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tab-content__icon">
+                            <span class="icon-tick"></span>
+                        </div>
+                        <div class="">
+                            <p class="tab-content__text" style="padding-top: 1rem;">Structured accountability and spiritual discipline</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tab-content__icon tab-content__icon-clr-seacondary">
+                            <span class="icon-tick"></span>
+                        </div>
+                        <div class="">
+                            <p class="tab-content__text" style="padding-top: 1rem;">Two discipleship phases: 8 months and 12 months</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tab-content__icon">
+                            <span class="icon-tick"></span>
+                        </div>
+                        <div class="">
+                            <p class="tab-content__text" style="padding-top: 1rem;">Open to believers across denominations, locations, and nations</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+                <section class="testimonial-two testimonial-three">
+            <div class="testimonial-two-bg" style="background-image: url(assets/images/backgrounds/testimonial-two-bg.png);"></div>
+            <div class="container">
+                <div class="col-xl-6">
+                    <div class="testimonial-two__left">
+                        <div class="section-title text-left">
+                            <h2 class="section-title__title">How the Platform Works</h2>
+                            <span class="">Bible Tour Adventure operates through a clearly defined, structured discipleship process designed to build consistency, discipline, and spiritual maturity.</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-12 col-lg-6">
-                        <div class="faq-page__single">
-                            <div class="accrodion-grp faq-one-accrodion faq-one-accrodion-1" data-grp-name="faq-one-accrodion-1">
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>What is Bible Tour Adventure?</h4>
-                                    </div>
-                                    <div class="accrodion-content" style="">
-                                        <div class="inner">
-                                            <p>66 books of the Bible</p>
-                                            <p>Partnership with the Holy Spirit</p>
-                                            <p>Structured accountability</p>
-                                            <p>8 & 12 months</p>
-                                        </div><!-- /.inner -->
-                                    </div>
+                    <div class="col-xl-12 testimonials-stack" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                        <div class="" style="width: 330px; margin-right: 30px;">
+                            <div class="testimonial-two__single">
+                                <div class="testimonial-two__content">
+                                    <ul class="about-one__points list-unstyled">
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-confirmation"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p style="font-size: smaller;">Phase One — Foundation (8 Months)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul style="font-size: smaller;">
+                                        <li>Designed for first-time participants</li>
+                                        <li>Focuses on consistency, discipline, and foundational engagement with God’s Word</li>
+                                        <li>Four intakes annually</li>
+                                    </ul>
                                 </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>How BTA Works</h4>
-                                    </div>
-                                    <div class="accrodion-content" style="display: none;">
-                                        <div class="inner">
-                                            <p>Phase One (8 Months) <br> <span style="margin-left: 1rem;">– For first timers</span> <br> <span style="margin-left: 1rem;"> – 4 intakes yearly</span></p>
-                                            <p>Phase Two (12 Months) <br> <span style="margin-left: 1rem;"> – For returning participants</span> <br> <span style="margin-left: 1rem;">– Deeper accountability & maturity</span></p>
-                                            <p>Outcome <br> <span style="margin-left: 1rem;"> – Spiritual growth</span> <br> <span style="margin-left: 1rem;">– Discipline</span> <br> <span style="margin-left: 1rem;"> – Love for God’s Word</span></p>
-                                        </div><!-- /.inner -->
-                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="" style="width: 330px; margin-right: 30px;">
+                            <div class="testimonial-two__single">
+                                <div class="testimonial-two__content">
+                                    <ul class="about-one__points list-unstyled">
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-confirmation"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p style="font-size: smaller;">Phase Two — Growth & Maturity (12 Months)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul style="font-size: smaller;">
+                                        <li>Designed for returning participants</li>
+                                        <li>Emphasizes deeper accountability, spiritual maturity, and sustained discipline</li>
+                                        <li>Two intakes annually</li>
+                                    </ul>
                                 </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>Impact & Credibility</h4>
-                                    </div>
-                                    <div class="accrodion-content" style="display: none;">
-                                        <div class="inner">
-                                            <p>Launched: January 3, 2021</p>
-                                            <p>1000+ participants admitted</p>
-                                            <p>311+ graduates (as of Nov 2025)</p>
-                                            <p>Participants across states & nations</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion last-chiled">
-                                    <div class="accrodion-title">
-                                        <h4>Burden Behind the Vision</h4>
-                                    </div>
-                                    <div class="accrodion-content" style="display: none;">
-                                        <div class="inner">
-                                            <p>Summerised emotional version of about us...</p>
-                                        </div><!-- /.inner -->
-                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="" style="width: 330px; margin-right: 30px;">
+                            <div class="testimonial-two__single">
+                                <div class="testimonial-two__content">
+                                    <ul class="about-one__points list-unstyled">
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-confirmation"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p style="font-size: smaller;">The Result</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p style="font-size: smaller; margin-bottom: -5px;">Participants grow in:</p>
+                                    <ul style="font-size: smaller;">
+                                        <li>Spiritual discipline</li>
+                                        <li>Consistent Bible engagement</li>
+                                        <li>Deeper understanding of God’s Word</li>
+                                        <li>Love for truth and obedience to Scripture</li>
+                                    </ul>
                                 </div>
                                 
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-xl-6 col-lg-6">
-                        <div class="faq-page__single">
-                            <div class="accrodion-grp faq-one-accrodion faq-one-accrodion-2" data-grp-name="faq-one-accrodion-2">
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>Capitalize on low hanging fruit to</h4>
-                                    </div>
-                                    <div class="accrodion-content" style="display: none;">
-                                        <div class="inner">
-                                            <p>There are many variations of passages the majority have suffered
-                                                alteration in some fo injected humour, or randomised words believable.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
+            </div>
+        </section>
+
+
+        <section class="counter-one" style="margin-top: 5rem;">
+            <div class="container">
+                <div class="testimonial-two__left">
+                    <div class="section-title text-left">
+                        <h2 class="section-title__title">Our Journey So Far</h2>
+                        <span class="">Since its official launch, Bible Tour Adventure has continued to impact lives through disciplined engagement with God’s Word.</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="counter-one__inner">
+                            <ul class="list-unstyled counter-one__list">
+                                <li class="counter-one__single fadeInUp animated" data-wow-delay="300ms"
+                                    style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                                    <div class="counter-one__icon counter-one__icon-clr-extra">
+                                        <span class="icon-social-campaign"></span>
+                                    </div>
+                                    <h3 class="odometer odometer-auto-theme" data-count="0" id="daysSince">
+                                        <div class="odometer-inside"><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">4</span></span></span></span></span><span
+                                                class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">8</span></span></span></span></span><span
+                                                class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">0</span></span></span></span></span>
+                                        </div>
+                                    </h3> <span>days</span>
+                                    <p class="counter-one__text">Since Launched Date Jan 3, 2021</p>
+                                </li>
+                                <li class="counter-one__single wow fadeInUp animated" data-wow-delay="100ms"
+                                    style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                                    <div class="counter-one__icon">
+                                        <span class="icon-campaign"></span>
+                                    </div>
+                                    <h3 class="odometer odometer-auto-theme" data-count="1000">
+                                        <div class="odometer-inside"><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">4</span></span></span></span></span><span
+                                                class="odometer-formatting-mark">,</span><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">8</span></span></span></span></span><span
+                                                class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">5</span></span></span></span></span><span
+                                                class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">0</span></span></span></span></span>
+                                        </div>
+                                    </h3> <span style="font-weight: bold; font-size: 2rem;">+</span>
+                                    <p class="counter-one__text">Participants admitted</p>
+                                </li>
+                                <li class="counter-one__single wow fadeInUp animated" data-wow-delay="200ms"
+                                    style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
+                                    <div class="counter-one__icon counter-one__icon-clr-primary">
+                                        <span class="icon-budget"></span>
+                                    </div>
+                                    <h3 class="odometer odometer-auto-theme" data-count="311">
+                                        <div class="odometer-inside"><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">3</span></span></span></span></span><span
+                                                class="odometer-formatting-mark">,</span><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">4</span></span></span></span></span><span
+                                                class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">5</span></span></span></span></span><span
+                                                class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">6</span></span></span></span></span>
+                                        </div>
+                                    </h3> <span style="font-weight: bold; font-size: 2rem;">+</span>
+                                    <p class="counter-one__text">Graduates as of Nov, 2025</p>
+                                </li>
+                                
+                                <li class="counter-one__single wow fadeInUp animated" data-wow-delay="400ms"
+                                    style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                                    <div class="counter-one__icon counter-one__icon-clr-secondary">
+                                        <span class="icon-help"></span>
+                                    </div>
+                                    <h3 class="odometer odometer-auto-theme" data-count="2060">
+                                        <div class="odometer-inside"><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">2</span></span></span></span></span><span
+                                                class="odometer-formatting-mark">,</span><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">0</span></span></span></span></span><span
+                                                class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">6</span></span></span></span></span><span
+                                                class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">0</span></span></span></span></span>
+                                        </div>
+                                    </h3>
+                                    <p class="counter-one__text">Participants Across States & Nations</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="counter-one" style="margin-top: 5rem;">
+            <div class="container">
+                <div class="testimonial-two__left">
+                    <div class="section-title text-left">
+                        <h2 class="section-title__title">THE BURDEN BEHIND THE VISION</h2>
+                        Bible Tour Adventure was not born from convenience, trends, or popularity, but from a burden to see believers grounded, disciplined, and established in God’s Word.
+                        What began as a divine instruction has grown into a structured platform where believers are guided beyond inspiration into consistency, accountability, and obedience to Scripture.
+                        This vision is rooted in unity beyond geography, denomination, or background, anchored solely in God’s Word. <a href="about.html" style="font-style: italic; color: rgb(212, 104, 58); font-size: smaller;">Read the full vision and journey on the About BTA page.</a>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
@@ -259,9 +488,9 @@
 					}
 				}">
 
-                <div class="section-title text-left">
-                    <h6 class="section-title__title">Our Students Voices</h6>
-                </div>
+                    <div class="section-title text-left">
+                        <h6 class="section-title__title">What Our Graduates Say</h6>
+                    </div>
 
                     <div class="owl-stage-outer">
                         <div class="owl-stage"
@@ -274,19 +503,15 @@
                                             <div class="testimonial-two__quote">
                                                 <span class="icon-quote"></span>
                                             </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
+                                            <p class="testimonial-two__text">BTA taught me consistency and accountability. My understanding of God’s Word has deepened beyond what I imagined.</p>
                                         </div>
                                         <div class="testimonial-two__client-info">
                                             <div class="testimonial-two__client-img">
                                                 <img src="assets/images/testimonial/testimonials-2-6.jpg" alt="">
                                             </div>
                                             <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Bradley Duncan</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
+                                                <h5 class="testimonial-two__client-name">Peter P. Joshua</h5>
+                                                <p class="testimonial-two__client-title">2022 Batch A Graduate</p>
                                             </div>
                                         </div>
                                     </div>
@@ -300,207 +525,21 @@
                                             <div class="testimonial-two__quote">
                                                 <span class="icon-quote"></span>
                                             </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-5.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Vernon Wolfe</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-1.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Edith Moody</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-2.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Myra Price</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-4.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Lulu Rose</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-1.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Edith Moody</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-2.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Myra Price</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-4.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Lulu Rose</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
+                                            <p class="testimonial-two__text">The structured approach helped me grow spiritually and personally. Highly recommended</p>
                                         </div>
                                         <div class="testimonial-two__client-info">
                                             <div class="testimonial-two__client-img">
                                                 <img src="assets/images/testimonial/testimonials-2-3.jpg" alt="">
                                             </div>
                                             <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Victor Pierce</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
+                                                <h5 class="testimonial-two__client-name">Sarafina Simi Gyang</h5>
+                                                <p class="testimonial-two__client-title">2023 Batch C Graduate</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item" style="width: 290px; margin-right: 30px;">
+                            <div class="owl-item cloned" style="width: 290px; margin-right: 30px;">
                                 <div class="item">
                                     <!--Testimonial Two Single-->
                                     <div class="testimonial-two__single">
@@ -508,253 +547,15 @@
                                             <div class="testimonial-two__quote">
                                                 <span class="icon-quote"></span>
                                             </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
+                                            <p class="testimonial-two__text">BTA gave me discipline and focus; it transformed my daily engagement with God’s Word.</p>
                                         </div>
                                         <div class="testimonial-two__client-info">
                                             <div class="testimonial-two__client-img">
                                                 <img src="assets/images/testimonial/testimonials-2-6.jpg" alt="">
                                             </div>
                                             <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Bradley Duncan</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-5.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Vernon Wolfe</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-1.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Edith Moody</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-2.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Myra Price</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-4.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Lulu Rose</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-1.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Edith Moody</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-2.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Myra Price</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-4.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Lulu Rose</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-3.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Victor Pierce</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 290px; margin-right: 30px;">
-                                <div class="item">
-                                    <!--Testimonial Two Single-->
-                                    <div class="testimonial-two__single">
-                                        <div class="testimonial-two__content">
-                                            <div class="testimonial-two__quote">
-                                                <span class="icon-quote"></span>
-                                            </div>
-                                            <p class="testimonial-two__text">Lorem ipsum is simply free text dolor sit
-                                                amet,
-                                                consect notted adipisicing elit sed do eiusmod tempor incididunt ut
-                                                labore
-                                                et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="testimonial-two__client-info">
-                                            <div class="testimonial-two__client-img">
-                                                <img src="assets/images/testimonial/testimonials-2-6.jpg" alt="">
-                                            </div>
-                                            <div class="testimonial-two__client-details">
-                                                <h5 class="testimonial-two__client-name">Bradley Duncan</h5>
-                                                <p class="testimonial-two__client-title">Customer</p>
+                                                <h5 class="testimonial-two__client-name">Ogheneakporobo Faith Aghogho</h5>
+                                                <p class="testimonial-two__client-title">2025 Batch A Graduate</p>
                                             </div>
                                         </div>
                                     </div>
@@ -762,9 +563,16 @@
                             </div>
                         </div>
                     </div>
+                    <br>
+                    <div  style="text-align: center;">
+                        <a style="border: none;" href="testimonies.html" class="thm-btn product__all-btn">Read More Stories</a>
+                    </div>
                 </div>
             </div>
         </section>
+
+
+
 
 
         <!--Site Footer Start-->
@@ -820,11 +628,21 @@
     <script src="assets/js/my-js/header.js"></script>
     <script src="assets/js/my-js/nav.js"></script>
     <script src="assets/js/my-js/footer.js"></script>
-    
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const start = new Date('2021-01-03T00:00:00Z');
+  const days = Math.floor((Date.now() - start) / (1000 * 60 * 60 * 24));
+  const el = document.getElementById('daysSince');
+  if (el) {
+    // update with formatted number (odometer handles the animation)
+    el.innerText = days.toLocaleString();
+    el.setAttribute('data-count', days);
+  }
+});
+</script>
     <!-- template js -->
     <script src="assets/js/pifoxen.js"></script>
 </body>
 
 </html>
-
-
