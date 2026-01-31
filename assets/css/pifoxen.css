@@ -16,22 +16,24 @@
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 :root {
-  --pifoxen-font: 'DM Sans', sans-serif;
-  --pifoxen-font-two: 'Fredoka One', cursive;
+  --pifoxen-font: 'Montserrat', sans-serif;
+  --pifoxen-font-two: 'Montserrat', sans-serif;
   --pifoxen-gray: #727272;
   --pifoxen-gray-rgb: 114, 114, 114;
   --pifoxen-white: #ffffff;
   --pifoxen-white-rgb: 255, 255, 255;
   --pifoxen-black: #343434;
   --pifoxen-black-rgb: 52, 52, 52;
-  --pifoxen-base: #ff5528;
-  --pifoxen-base-rgb: 255, 85, 40;
-  --pifoxen-primary: #ffa415;
-  --pifoxen-primary-rgb: 255, 164, 21;
-  --pifoxen-secondary: #26cc8c;
-  --pifoxen-secondary-rgb: 38, 204, 140;
-  --pifoxen-extra: #2bb1ce;
+  --pifoxen-base: #FFD700;
+  --pifoxen-base-rgb: 255, 215, 0;
+  --pifoxen-primary: #2E0A45;
+  --pifoxen-primary-rgb: 46, 10, 69;
+  --pifoxen-secondary: #FFD700;
+  --pifoxen-secondary-rgb: 255, 215, 0;
+  --pifoxen-extra: #2E0A45;
   --pifoxen-extra-rgb: 43, 177, 206;
   --pifoxen-extra-two: #f2f0ec;
   --pifoxen-extra-two-rgb: 242, 240, 236;
@@ -97,10 +99,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--pifoxen-black);
+  color: var(--pifoxen-primary);
   font-family: var(--pifoxen-font-two);
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 dl,
@@ -795,14 +797,14 @@ ul {
 
 .main-menu .main-menu__list>li,
 .stricky-header .main-menu__list>li {
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   position: relative;
 }
 
 .main-menu .main-menu__list>li+li,
 .stricky-header .main-menu__list>li+li {
-  margin-left: 55px;
+  margin-left: 40px;
 }
 
 .main-menu .main-menu__list>li>a,
@@ -5388,7 +5390,7 @@ ul {
 
 .footer-widget__contact-list li .icon span {
   font-size: 14px;
-  color: var(--pifoxen-primary);
+  color: var(--pifoxen-base);
 }
 
 .footer-widget__contact-list li .text {

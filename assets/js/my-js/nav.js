@@ -65,41 +65,49 @@ document.getElementById("nav").innerHTML=`
                             </div> -->
 `;
 
-// Add active nav detection so the current page's nav item receives the `current` class ✅
+// Ensure the current page's nav item receives the `current` class across main, sticky, and mobile menus
 (function() {
     const path = window.location.pathname.split('/').pop(); // e.g. 'about.html'
-    const menuItems = document.querySelectorAll('.main-menu__list li');
+    const isHome = path === '' || path === 'index.html';
 
-    if (!menuItems.length) return;
+    function applyToList(ul) {
+        if (!ul) return;
 
-    // clear existing current classes
-    menuItems.forEach(li => li.classList.remove('current'));
+        // Clear any existing current classes
+        ul.querySelectorAll('li').forEach(li => li.classList.remove('current'));
 
-    // attempt to match by href filename
-    let matched = null;
-    menuItems.forEach(li => {
-        const a = li.querySelector('a');
-        if (!a) return;
-        const href = a.getAttribute('href') || '';
+        ul.querySelectorAll('li').forEach(li => {
+            const a = li.querySelector('a');
+            if (!a) return;
+            const href = a.getAttribute('href') || '';
 
-        // skip anchors
-        if (href.startsWith('#')) return;
+            // skip anchors (e.g., #contact)
+            if (href.startsWith('#')) return;
 
-        const hrefFile = href.split('/').pop();
+            const hrefFile = href.split('/').pop();
 
-        // exact match (about.html === about.html)
-        if (hrefFile === path) matched = li;
-
-        // handle home (index or root)
-        if ((path === '' || path === 'index.html') && (hrefFile === 'index.html' || href === '')) matched = li;
-    });
-
-    if (matched) matched.classList.add('current');
-    else {
-        // fallback: if no filename match and we're on index, ensure Home is current
-        if (path === '' || path === 'index.html') {
-            const home = document.querySelector('.main-menu__list li a[href="index.html"]') || document.querySelector('.main-menu__list li a[href=""]');
-            if (home && home.parentElement) home.parentElement.classList.add('current');
-        }
+            if (hrefFile === path || (isHome && (hrefFile === 'index.html' || href === ''))) {
+                li.classList.add('current');
+            }
+        });
     }
+
+    function applyCurrent() {
+        const menuLists = document.querySelectorAll('.main-menu__list');
+        if (!menuLists.length) return;
+        menuLists.forEach(ul => applyToList(ul));
+    }
+
+    // initial apply
+    applyCurrent();
+
+    // re-apply whenever the sticky header content changes (it gets cloned dynamically)
+    const stickyContainer = document.querySelector('.sticky-header__content');
+    if (stickyContainer) {
+        const mo = new MutationObserver(() => applyCurrent());
+        mo.observe(stickyContainer, { childList: true, subtree: true });
+    }
+
+    // ensure current class is correct after load
+    window.addEventListener('load', applyCurrent);
 })();

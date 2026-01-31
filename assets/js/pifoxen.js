@@ -843,6 +843,11 @@
   SmoothMenuScroll();
 
   function OnePageMenuScroll() {
+    // Only run the one-page scroll spy on the homepage where in-page sections exist
+    var path = window.location.pathname.split('/').pop();
+    var isHome = path === '' || path === 'index.html';
+    if (!isHome) return;
+
     var windscroll = $(window).scrollTop();
     if (windscroll >= 90) {
       var menuAnchor = $(".one-page-scroll-menu .scrollToLink").children("a");
