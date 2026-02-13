@@ -42,7 +42,7 @@ document.getElementById("contact").innerHTML=`
                                     <span class="icon-pin"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Minna, Niger State</p>
+                                    <p>Zaria, Kaduna State</p>
                                 </div>
                             </li>
                         </ul>
