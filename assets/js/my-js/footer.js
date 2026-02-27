@@ -95,14 +95,11 @@ document.getElementById("contact").innerHTML=`
             <div class="row">
                 <div class="col-xl-12">
                     <div class="site-footer__bottom-inner">
-                        <p class="site-footer__bottom-text">© Copyright 2026 by <a
-                                href="">Bible Tour Adventure</a>
-                        </p>
+                        <p class="site-footer__bottom-text">© 2026 Bible Tour Adventure. All Rights Reserved.</p>
                         <div class="site-footer__social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-pinterest-p"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/share/1CELR12DCV/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/bible_tour_adventure?igsh=bnpveXM5bXRrMjB5"><i class="fab fa-instagram"></i></a>
+                            <a href="https://tiktok.com/@bibletouradventure"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>

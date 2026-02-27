@@ -47,6 +47,27 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/pifoxen.css" />
     <link rel="stylesheet" href="assets/css/pifoxen-responsive.css" />
+    <style>
+    /* Responsive two-column on desktop/tablet, stacked on mobile */
+    .sections{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+    .sections > section{
+        flex: 0 0 calc(50% - 1rem);
+        box-sizing: border-box;
+    }
+    @media (max-width: 767.98px){
+        .sections{
+            flex-direction: column;
+        }
+        .sections > section{
+            flex: 0 0 100%;
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -74,7 +95,7 @@
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
 
-        <section style="background-color: #333; width: 100%; height: 180px;">
+        <section style="background-color: #333; width: 100%; height: 70px;">
         </section>
         
         <section class="testimonial-two testimonial-three" style="">
@@ -109,7 +130,7 @@
 
         
 
-        <section style="margin-top: 2rem;">
+        <section style="margin-top: 2rem; margin-bottom: 2rem;">
             <div class="row">
                 <h3 style="text-align: center; margin-bottom: 3rem;" class="donations-list__title">Program Phases</h3>
             </div>
@@ -120,13 +141,14 @@
                             <div class="donations-list__category">
                                 <p>Phase One – 8 Months (First Timers)</p>
                             </div>
-                            <ul>
+                           <ul style="margin-top: 1rem;">
                                 <li>Designed for first-time participants</li>
                                 <li>Four intakes: January, April, July, October</li>
                                 <li>Focus on foundation, consistency, and discipline</li>
                             </ul>
                             <br>
-                            <a href="" class="thm-btn product__all-btn">Apply</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFhScryr4epJPpBTOe6zWkOW8IXqxAUme5bO
+NUatXH21HjnA/viewform?usp=sf_link" class="thm-btn pricing-card__btn" target="_blank" style="text-transform: capitalize;">Apply for Phase One</a>
                         </div>
                     </div>
                 </div>
@@ -137,174 +159,174 @@
                             <div class="donations-list__category">
                                 <p>Phase Two – 12 Months (Second Timers)</p>
                             </div>
-                            <ul>
+                            <ul style="margin-top: 1rem;">
                                 <li>For participants who have completed Phase One</li>
                                 <li>Two intakes: January and July</li>
                                 <li>Focus on deeper accountability and maturity</li>
                             </ul>
                             <br>
-                            <a href="" class="thm-btn product__all-btn">Apply</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkqFmCI01Mx5F-
+sz2Tw5kTbP9ymcAmm8AlSD1hC9wgDsY1-Q/viewform?usp=sf_link" class="thm-btn pricing-card__btn" target="_blank" style="text-transform: capitalize;">Apply for Phase Two</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         
-        <section style="margin-top: 5rem;">
-            <div class="about-page__right">
-                <div class="row">
-                    <h3 style="" class="donations-list__title">Commitment & Expectations</h3>
+        <div class="sections" style="margin-left: 1rem;">
+            <section style="margin-bottom: -5rem;">
+                <div class="about-page__right">
+                    <div class="row">
+                        <h3 style="margin-bottom: -2rem;" class="donations-list__title">Commitment & Expectations</h3>
+                    </div>
+                    <ul class="list-unstyled donation-details__points">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Daily or weekly Bible engagement</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Participation in assigned teachings and tasks</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Willingness to submit to accountability</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Respect for platform rules and leadership</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="list-unstyled donation-details__points">
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Daily or weekly Bible engagement</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Participation in assigned teachings and tasks</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Willingness to submit to accountability</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Respect for platform rules and leadership</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            </section>
 
-
-        <section style="margin-top: 5rem;">
-            <div class="about-page__right">
-                <div class="row">
-                    <h3 style="" class="donations-list__title">Time Expectations</h3>
+            <section style="margin-bottom: -5rem;">
+                <div class="about-page__right">
+                    <div class="row">
+                        <h3 style="margin-bottom: -2rem;"class="donations-list__title">Time Expectations</h3>
+                    </div>
+                    <ul class="list-unstyled donation-details__points">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Minimum daily time commitment</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Consistency required throughout the program</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Punctuality and responsiveness expected</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="list-unstyled donation-details__points">
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Minimum daily time commitment</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Consistency required throughout the program</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Punctuality and responsiveness expected</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            </section>
 
-
-        <section style="margin-top: 5rem;">
-            <div class="about-page__right">
-                <div class="row">
-                    <h3 style="" class="donations-list__title">Accountability Structure</h3>
+            <section style="margin-bottom: -5rem;">
+                <div class="about-page__right">
+                    <div class="row">
+                        <h3 style="margin-bottom: -2rem;" class="donations-list__title">Accountability Structure</h3>
+                    </div>
+                    <ul class="list-unstyled donation-details__points">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Assigned accountability systems</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Follow-up by heads of divisions or team leads</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Progress monitoring throughout the program</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="list-unstyled donation-details__points">
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Assigned accountability systems</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Follow-up by heads of divisions or team leads</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Progress monitoring throughout the program</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            </section>
 
-
-
-        <section style="margin-top: 5rem;">
-            <div class="about-page__right">
-                <div class="row">
-                    <h3 style="" class="donations-list__title">How to Register</h3>
+            <section style="">
+                <div class="about-page__right">
+                    <div class="row">
+                        <h3 style="margin-bottom: -2rem;" class="donations-list__title">How to Register</h3>
+                    </div>
+                    <ul class="list-unstyled donation-details__points">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Choose your phase</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Complete the online application form</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-confirmation"></span>
+                            </div>
+                            <div class="text">
+                                <p>Await confirmation and onboarding instructions</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="list-unstyled donation-details__points">
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Choose your phase</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Complete the online application form</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-confirmation"></span>
-                        </div>
-                        <div class="text">
-                            <p>Await confirmation and onboarding instructions</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            </section>
+        </div>
 
 
-        <section style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 5rem;">
+        <section style="margin-left: 1rem; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 5rem;">
             <p>If you are ready to commit to a disciplined and accountable walk in God’s Word, we invite you to apply.</p>
-            <div class="apply-btns">
-                <a href="" class="thm-btn pricing-card__btn">Apply for Phase One</a>
-                <a href="" class="thm-btn pricing-card__btn">Apply for Phase Two</a>
+            <div class="apply-btns" style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFhScryr4epJPpBTOe6zWkOW8IXqxAUme5bO
+NUatXH21HjnA/viewform?usp=sf_link" class="thm-btn pricing-card__btn" target="_blank" style="text-transform: capitalize;">Apply for Phase One</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkqFmCI01Mx5F-
+sz2Tw5kTbP9ymcAmm8AlSD1hC9wgDsY1-Q/viewform?usp=sf_link" class="thm-btn pricing-card__btn" target="_blank" style="text-transform: capitalize;">Apply for Phase Two</a>
             </div>
         </section>
 
@@ -359,7 +381,7 @@
 
 
     <!-- my JS -->
-    <script src="assets/js/my-js/header.js"></script>
+    <!-- <script src="assets/js/my-js/header.js"></script> -->
     <script src="assets/js/my-js/nav.js"></script>
     <script src="assets/js/my-js/footer.js"></script>
 
