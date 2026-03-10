@@ -54,7 +54,7 @@ document.getElementById("nav").innerHTML=`
                 <a href="testimonies.html">Testimonies & Graduates</a>
             </li>
             <li class="scroll-to-target" data-scroll-offset="60">
-                <a href="#contact">Contact Us</a>
+                <a href="#contact">Contact/Donate</a>
             </li>
         </ul>
     </div>

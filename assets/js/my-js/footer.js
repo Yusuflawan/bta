@@ -47,8 +47,22 @@ document.getElementById("contact").innerHTML=`
                             </li>
                         </ul>
 
-                        <h3 style="margin-top: 4rem;" class="footer-widget__title">Response Expectation</h3>
-                        <p class="">Our team will respond as soon as possible</p>
+                        <h3 style="margin-top: 4rem;" class="footer-widget__title">Support The Vision</h3>
+                        <ul class="list-unstyled pricing-card__list" style="margin-left: -1.5rem">
+                            <li>
+                                <i class="icon-tick"></i>
+                                <strong>Account Name:</strong> Highway of Realignment Apostolic Ministries Intl
+                            </li>
+                            <li>
+                                <i class="icon-tick"></i>
+                                <strong>Account Number:</strong> 1027360599
+                            </li>
+                            <li>
+                                <i class="icon-tick"></i>
+                                <strong>Bank:</strong> United Bank for Africa (UBA)
+                            </li>
+                        </ul>
+                        For partnership inquiries or clarification, please feel free to contact us.
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
@@ -86,6 +100,8 @@ document.getElementById("contact").innerHTML=`
                         </form>
                     </div>
                 </div>
+
+              
 
             </div>
         </div>
