@@ -34,7 +34,7 @@ document.getElementById("mobile-view-nav").innerHTML=`
 document.getElementById("nav").innerHTML=`
     <div class="main-menu-two-wrapper__main-menu">
         <a href="" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-        <ul class="main-menu__list one-page-scroll-menu">
+        <ul class="main-menu__list one-page-scroll-menu" style="margin-left: -.5rem; margin-right: -.5rem;">
             <li class="current scrollToLink logo-menu-item" data-scroll-offset="0">
                 <a href="index.html" aria-label="logo image"><img style="width: 3rem; height: 3rem;" src="assets/images/resources/BTA Logocopy.png" alt="" /></a>
             </li>
