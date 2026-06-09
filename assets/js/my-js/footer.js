@@ -34,7 +34,7 @@ document.getElementById("contact").innerHTML=`
                                     <span class="icon-telephone"></span>
                                 </div>
                                 <div class="text">
-                                    <a href="tel:307760608">09132622924</a>
+                                    <a href="tel:307760608">+234 913 262 2924 or +234 706 100 2105</a>
                                 </div>
                             </li>
                             <li>
@@ -42,7 +42,7 @@ document.getElementById("contact").innerHTML=`
                                     <span class="icon-pin"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Zaria, Kaduna State</p>
+                                    <p>Zaria, Kaduna State, Nigeria</p>
                                 </div>
                             </li>
                         </ul>
